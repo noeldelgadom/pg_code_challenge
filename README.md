@@ -5,22 +5,21 @@ This is Noel Delgado's PolicyGenious Code Challenge as described [here](https://
 ## Demo
 Check out the demo [here](https://noel-delgado-pg-challenge.herokuapp.com/)
 
+## Installing Rails
+
+Follow these [instructions](http://installrails.com/) 
+
 ## Cloning Repo
 
 Navigate to the folder where you want to place the files. In your terminal run these steps.
 
 1. `$ git clone https://github.com/noeldelgadom/pg_code_challenge.git`
-
-* Ruby Version '2.3.3'
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
+2. `$ cd pg_code_challenge/`
+3. `$ bundle`
+4. `$ rake db:create`
+5. `$ rake db:migrate`
+6. `$ rake db:seed`
+7. `$ rails s`
+8. Then visit http://localhost:3000/ in your browser.
 
 ## Boom!

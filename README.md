@@ -2,13 +2,14 @@
 
 This is Noel Delgado's PolicyGenious Code Challenge as described [here](https://docs.google.com/document/d/15f4hiBdM26FcEdJDLWt7tacP5Jic5StUlwv4JLxT9BU/edit#heading=h.btde6cpivf).
 
-## Visit Demo
-https://noel-delgado-pg-challenge.herokuapp.com/
+## Demo
+Check out the demo [here](https://noel-delgado-pg-challenge.herokuapp.com/)
 
-To get up and running.
+## Cloning Repo
 
-1. Navigate to the folder where you want to place the files
-2. In your terminal run `git clone https://github.com/noeldelgadom/pg_code_challenge.git`
+Navigate to the folder where you want to place the files. In your terminal run these steps.
+
+1. `$ git clone https://github.com/noeldelgadom/pg_code_challenge.git`
 
 * Ruby Version '2.3.3'
 

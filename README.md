@@ -1,13 +1,14 @@
-# README
+# README - PG Code Challenge
 
-## Noel Delgado
+## Visit Demo
+https://noel-delgado-pg-challenge.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To get up and running.
 
-Things you may want to cover:
+1. Navigate to the folder where you want to place the files
+2. In your terminal run `git clone https://github.com/noeldelgadom/pg_code_challenge.git`
 
-* Ruby version
+* Ruby Version '2.3.3'
 
 * System dependencies
 
@@ -19,14 +20,4 @@ Things you may want to cover:
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-rails d model Gender
-rails d model Condition
-rails d scaffold Client
-
-rails g model Gender name:string
-rails g model Condition name:string increase:integer
-rails g scaffold Client name:string age:integer gender:references condition:references quote:float
+## Boom!

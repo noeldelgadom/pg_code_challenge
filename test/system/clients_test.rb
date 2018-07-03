@@ -15,7 +15,7 @@ class ClientsTest < ApplicationSystemTestCase
     click_on "New Client"
 
     fill_in "Age", with: @client.age
-    fill_in "Conditions", with: @client.conditions_id
+    fill_in "Condition", with: @client.condition_id
     fill_in "Gender", with: @client.gender_id
     fill_in "Name", with: @client.name
     fill_in "Quote", with: @client.quote
@@ -30,7 +30,7 @@ class ClientsTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Age", with: @client.age
-    fill_in "Conditions", with: @client.conditions_id
+    fill_in "Condition", with: @client.condition_id
     fill_in "Gender", with: @client.gender_id
     fill_in "Name", with: @client.name
     fill_in "Quote", with: @client.quote

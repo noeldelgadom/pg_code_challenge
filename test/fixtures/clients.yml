@@ -4,12 +4,12 @@ one:
   name: MyString
   age: 1
   gender: one
-  conditions: one
+  condition: one
   quote: 1.5
 
 two:
   name: MyString
   age: 1
   gender: two
-  conditions: two
+  condition: two
   quote: 1.5

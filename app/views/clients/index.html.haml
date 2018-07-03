@@ -20,7 +20,7 @@
         %td= client.gender.name
         %td= client.condition.name
         %td= number_to_currency(client.quote)
-        %td= link_to 'Show', client, class: 'btn btn-primary'
+        %td= link_to 'View', client, class: 'btn btn-primary'
         %td= link_to 'Edit', edit_client_path(client), class: 'btn btn-warning'
         %td= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'
 

@@ -14,8 +14,8 @@
   = @client.condition.name
 %p
   %b Quote:
-  = @client.quote
+  = number_to_currency(@client.quote)
 
-= link_to 'Edit', edit_client_path(@client)
+= link_to 'Back', clients_path, class: 'btn btn-info'
 \|
-= link_to 'Back', clients_path
+= link_to 'Edit', edit_client_path(@client), class: 'btn btn-warning'

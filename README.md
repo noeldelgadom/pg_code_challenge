@@ -19,8 +19,11 @@ Navigate to the folder where you want to place the files. In your terminal run t
 4. `$ rake db:create`
 5. `$ rake db:migrate`
 6. `$ rake db:seed`
-7. `$ rake test`
-8. `$ rails s`
-9. Then visit http://localhost:3000/ in your browser.
+7. `$ rails s`
+8. Then visit http://localhost:3000/ in your browser.
 
-## Boom!
+## Tests
+
+To run tests run `$ rails test`
+
+### Boom!

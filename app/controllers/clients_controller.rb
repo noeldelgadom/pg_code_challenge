@@ -1,5 +1,6 @@
 class ClientsController < ApplicationController
   before_action :set_client, only: [:show, :edit, :update, :destroy]
+  before_action :set_gender_and_conditions, only: [:new, :edit]
 
   def index
     @clients = Client.all
@@ -10,17 +11,15 @@ class ClientsController < ApplicationController
 
   def new
     @client     = Client.new
-    @genders    = Gender.all
-    @conditions = Condition.all
   end
 
   def edit
   end
 
   def create
-    @client = Client.new(client_params)
+    @client = Client.create!(client_params)
 
-    if @client.save
+    if @client
       redirect_to @client, notice: 'Client was successfully created.'
     else
       render :new
@@ -45,7 +44,17 @@ class ClientsController < ApplicationController
       @client = Client.find(params[:id])
     end
 
+    def set_gender_and_conditions
+      @genders    = Gender.all
+      @conditions = Condition.all
+    end
+
     def client_params
-      params.require(:client).permit(:name, :age, :gender_id, :condition_id, :quote)
+      {
+        name:         params[:client][:name],
+        age:          params[:client][:age],
+        gender_id:    params[:client][:gender],
+        condition_id: params[:client][:condition]
+      }
     end
 end

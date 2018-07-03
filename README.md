@@ -1,4 +1,6 @@
-# README - PG Code Challenge
+# README
+
+This is Noel Delgado's PolicyGenious Code Challenge as described [here](https://docs.google.com/document/d/15f4hiBdM26FcEdJDLWt7tacP5Jic5StUlwv4JLxT9BU/edit#heading=h.btde6cpivf).
 
 ## Visit Demo
 https://noel-delgado-pg-challenge.herokuapp.com/

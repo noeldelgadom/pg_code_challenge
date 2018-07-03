@@ -1,22 +1,47 @@
-= form_for @client do |f|
-  - if @client.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@client.errors.count, "error")} prohibited this client from being saved:"
-      %ul
-        - @client.errors.full_messages.each do |message|
-          %li= message
+%form
+  = form_for @client do |f|
+    - if @client.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@client.errors.count, "error")} prohibited this client from being saved:"
+        %ul
+          - @client.errors.full_messages.each do |message|
+            %li= message
 
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :age
-    = f.number_field :age
-  .field
-    = f.label :gender
-    = f.text_field :gender
-  .field
-    = f.label :condition
-    = f.text_field :condition
-  .actions
-    = f.submit 'Save'
+    .form-group
+      = f.label :name
+      = f.text_field :name
+    .form-group
+      = f.label :age
+      = f.number_field :age
+    .form-group
+      = f.label :gender
+      = f.text_field :gender
+    .form-group
+      = f.label :condition
+      = f.text_field :condition
+    .actions
+      = f.submit 'Save'
+
+%form
+  .form-group
+    %label{:for => "exampleFormControlInput1"} Email address
+    %input#exampleFormControlInput1.form-control{:placeholder => "name@example.com", :type => "email"}/
+  .form-group
+    %label{:for => "exampleFormControlSelect1"} Example select
+    %select#exampleFormControlSelect1.form-control
+      %option 1
+      %option 2
+      %option 3
+      %option 4
+      %option 5
+  .form-group
+    %label{:for => "exampleFormControlSelect2"} Example multiple select
+    %select#exampleFormControlSelect2.form-control{:multiple => "multiple"}
+      %option 1
+      %option 2
+      %option 3
+      %option 4
+      %option 5
+  .form-group
+    %label{:for => "exampleFormControlTextarea1"} Example textarea
+    %textarea#exampleFormControlTextarea1.form-control{:rows => "3"}

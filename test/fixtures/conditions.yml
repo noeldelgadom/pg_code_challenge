@@ -2,6 +2,8 @@
 
 one:
   name: MyString
+  increase: 1
 
 two:
   name: MyString
+  increase: 1

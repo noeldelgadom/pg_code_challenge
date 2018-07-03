@@ -1,9 +1,10 @@
 Gender.create!(name: 'Male')
 Gender.create!(name: 'Female')
 
-Condition.create!(name: 'Allergies')
-Condition.create!(name: 'Sleep Apnea')
-Condition.create!(name: 'Heart Disease')
+Condition.create!(name: 'None',           increase: 0)
+Condition.create!(name: 'Allergies',      increase: 1)
+Condition.create!(name: 'Sleep Apnea',    increase: 6)
+Condition.create!(name: 'Heart Disease',  increase: 17)
 
 Client.create!( name:         'Kelly',
                 age:          50,

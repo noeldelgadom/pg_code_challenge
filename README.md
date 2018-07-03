@@ -9,7 +9,7 @@ Check out the demo [here](https://noel-delgado-pg-challenge.herokuapp.com/)
 
 Follow these [instructions](http://installrails.com/) 
 
-## Cloning Repo
+## Running Locally
 
 Navigate to the folder where you want to place the files. In your terminal run these commands.
 

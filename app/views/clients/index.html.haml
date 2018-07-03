@@ -17,8 +17,8 @@
       %tr
         %td= client.name
         %td= client.age
-        %td= client.gender
-        %td= client.condition
+        %td= client.gender.name
+        %td= client.condition.name
         %td= client.quote
         %td= link_to 'Show', client
         %td= link_to 'Edit', edit_client_path(client)

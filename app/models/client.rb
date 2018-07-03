@@ -4,26 +4,18 @@ class Client < ApplicationRecord
   after_save    :set_quote
 
   def set_quote
-    # The base cost of insurance is $100 annually.
+    # Base Cost
     q = 100
 
-    # For every 5 years over the age of 18 years old, the base price increases by $20. In this calculation, life insurance is only available for people over the age of 18.
-    q += 20 * (self.age - 18)/5
+    # For every 5 years over the age of 18 years old, the base price increases by $20.
+    q += (self.age - 18) / 5 * 20
 
-    q = q
-    # Condition | Relative cost increase
-    # Allergies | 1%
-    # Sleep Apnea | 6%
-    # Heart Disease | 17%
+    # Condition
+    q = q * (100 + self.condition.increase) / 100.0
 
-    # Females have a longer life expectancy, so receive a $12 discount on the final price.
+    # $12 discount for females
+    q -= 12 if self.gender.name == 'Female'
 
-    puts '---------'
-    puts '---------'
-    puts q
-    puts '---------'
-    puts '---------'
-
-    self.quote = q
+    self.update_attributes!(quote: q) unless self.quote == q
   end
 end
